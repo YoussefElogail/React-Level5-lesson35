@@ -144,7 +144,7 @@ console.log(data)
                   variant="body1"
                   color={theme.palette.error.light}
                 >
-                  ${item.price}
+                  $${item.price}
                 </Typography>
               </CardActions>
             </Card>
