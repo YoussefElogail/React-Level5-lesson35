@@ -74,7 +74,7 @@
   opacity: 1;
   border: 1px solid lightseagreen;
 }
-.product_details .box {
+.product_details .box .cart{
   background: #333;
   color: white;
   outline: none;
