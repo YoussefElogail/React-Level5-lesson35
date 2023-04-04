@@ -76,23 +76,24 @@ const ProductDetails = () => {
 
           <div className="box">
             <div className="row">
-              <h2>{data.productName}</h2>
-              <span>${data.price}</span>
+              <h2 style={{fontSize:"33px"}}>{data.productName}</h2>
+              <span style={{fontSize:"20px"}}>${data.price}</span>
             </div>
             {/* <Colors colors={data.colors} /> */}
 
-            <p>{data.description}</p>
+            <p style={{fontSize:"18px"}}>{data.description}</p>
             <DetailsThumb
               images={data.imageLink}
               tab={handleTab}
               myRef={myRef}
             />
             {selectedProductsID.includes(data.id) ? (
-              <div
+              <div 
                 style={{
                   display: "flex",
                   alignItems: "center",
                   marginTop: "33px",
+                  
                 }}
               >
                 <IconButton
@@ -120,7 +121,7 @@ const ProductDetails = () => {
               </div>
             ) : (
               <Button
-                sx={{ textTransform: "capitalize", p: 1, lineHeight: 1.1 }}
+                sx={{ textTransform: "capitalize", p: 1, lineHeight: 1.1 ,marginTop: "28px",}}
                 variant="contained"
                 color="primary"
                 onClick={() => {
